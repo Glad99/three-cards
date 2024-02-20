@@ -5,11 +5,18 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavBar = () => {
 return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" className="bg-body-secondary">
         <Container>
-            <Navbar.Brand href="#home">Glad-Flory</Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Brand href="#home" style={{
+                fontSize: "2rem",
+                fontWeight: "600",
+                color: "green"
+            }}>Glad-Flory</Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav"  />
+            <Navbar.Collapse id="basic-navbar-nav" style={{
+                fontSize: "1rem",
+                fontWeight: "600"
+            }}>
             <Nav className="m-auto gap-5">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Contact</Nav.Link>
